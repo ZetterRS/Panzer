@@ -17,6 +17,7 @@ public class MyGdxGame extends ApplicationAdapter {
 
 	Vector3 touchPos;
 
+//Размеры и расположение...
 	static float width;
 	static float height;
 
@@ -48,15 +49,14 @@ public class MyGdxGame extends ApplicationAdapter {
 		Gdx.gl.glClearColor(1, 1, 1, 1);
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
-		new Turret();  //Turret.java Расположение всех башен...
-		new Body();    //Body.java Разположение всех Корпусов...
+		Turret turret = new Turret();  //Turret.java Расположение всех башен...
+		Body body = new Body();        //Body.java Разположение всех Корпусов...
 
 		camera.update();
 	}
 	//распорежение чем-либо...
 	@Override
 	public void dispose () {
-
 		batch.dispose();
 	}
 

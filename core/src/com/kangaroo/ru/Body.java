@@ -14,6 +14,7 @@ public class Body {
     public void bodyWolfhound(){
         colorTexture = new Texture("body_1_color.png");
         frameTexture = new Texture ("body_1_frame.png");
+
     }
 
 }
